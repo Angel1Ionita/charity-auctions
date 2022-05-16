@@ -1,0 +1,27 @@
+<div class = "container" >
+  <h1 class = "title" >
+    Autentifica-te
+  </h1>
+  <form [formGroup]="userForm" class = "form">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" formControlName="nume"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Adresa email</mat-label>
+      <input matInput placeholder="Adresa" formControlName="adresa_email"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Parola</mat-label>
+      <input matInput placeholder="Parola" formControlName="parola"/>
+    </mat-form-field>
+
+    <button mat-raised-button (click)="addUser()">
+      Save
+    </button>
+  </form>
+</div>
+

@@ -1,0 +1,212 @@
+body{
+}
+.bara_sus{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.bara_sus img{
+  height: 50px;
+  background-color: white;
+}
+.formular{
+  margin-left: 350px;
+}
+.meniu{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: black;
+  opacity: 0.7;
+}
+.meniu ul a{
+  display: block;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color:white;
+  white-space: nowrap;
+  justify-content: space-around;
+}
+.meniu_buton a:hover{
+  color:royalblue;
+}
+.meniu_lateral{
+  position:fixed;
+  white-space: nowrap;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  display: block;
+  padding: 0, 5px;
+  width: 50px;
+  height: calc(100vh - 50px);
+  background-color: black;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.meniu_lateral ul{
+  flex-direction: column;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.meniu_lateral ul button{
+  margin-left: 100px;
+  visibility: hidden;
+  color: black
+}
+footer{
+  background-color: silver;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1%;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.bine_ati_venit{
+  margin-top: 75px;
+  margin-left: 37%;
+  max-height: 200px;
+  justify-content: center;
+}
+.descriere_home h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.descriere_home p{
+  display: flex;
+  text-align: center;
+  margin-left: 75px;
+}
+.map{
+  display: flex;
+  justify-content:space-evenly;
+}
+.contact{
+  margin-top: 75px;
+  width: 100%;
+}
+.contact p{
+  text-align: center;
+}
+.contact h2{
+  text-align: center;
+}
+.contact ul li{
+  text-align: center;
+  list-style: none;
+}
+.despre_noi{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 50px;
+  text-align: center;
+}
+#filtre{
+  margin-top: 100px;
+  margin-left: 15%;
+}
+#lista_filtre{
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  margin-bottom: 50px;
+}
+#lista_filtre div{
+  margin-left: 6px;
+}
+#lista_filtre input{
+  width: 70px;
+  margin-left: 6px;
+}
+#lista_produse{
+  margin-right: 12%;
+  margin-left: 12%;
+  display: flex;
+  flex-direction: column;
+
+  .produs{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    background-color: #777777;
+    height: 200px;
+    width: 100%;
+    .id{
+      margin-top: 85px;
+      margin-left: 50px;
+      margin-right: 150px;
+    }
+    .denumire{
+      margin-top: 85px;
+      margin-right: 150px;
+    }
+    .pret{
+      margin-top: 85px;
+      margin-right: 150px;
+    }
+    .produs_img{
+      width: 100px;
+      max-height: 150px;
+      margin-top: 25px;
+    }
+
+  }
+  .produs:hover{
+    transform: scale(1.1);
+    color: white;
+  }
+}
+
+#cos_cumparaturi{
+  border-radius: 20px;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#titlu_cos{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#add_to_cart{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#cos{
+  color: white;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
