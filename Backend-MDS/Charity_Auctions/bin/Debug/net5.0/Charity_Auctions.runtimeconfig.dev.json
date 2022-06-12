@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Shinyeyes\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Shinyeyes\\.nuget\\packages"
+    ]
+  }
+}

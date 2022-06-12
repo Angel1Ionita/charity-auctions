@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+</head>
+<body>
+<div class = "bara_sus" >
+  <a href = "http://localhost:4200/login">
+    <img src = "https://i.pinimg.com/564x/46/78/a2/4678a244fbb4f7ef16a9acd72b69ca82.jpg" id = "logo" >
+  </a>
+  <nav class = "meniu" >
+    <ul class = "meniu_buton"><a href="http://localhost:4200/produse">Auctions</a></ul>
+    <ul class = "meniu_buton"><a href="http://localhost:4200/contact">Contact</a></ul>
+    <mat-icon id = 'cos' (click) = "cos()">account_circle</mat-icon>
+  </nav>
+</div>
+<aside>
+  <nav class = "meniu_lateral" >
+  </nav>
+</aside>
+<div class='contact'>
+  <p>
+    Ne gasiti la adresa: 19 Dock Rd, Cape Town, 8001, Africa de Sud. De asemenea ne puteti contacta la nr. tel 0800 890 133 cat si la adresa de email companie@gmail.com.
+
+  </p>
+  <p></p>
+  <p>Pentru alte reclamatii/nelamuriri va rugam sa completati acest formular si va vom contacta in cel mai scurt timp</p>
+  <form
+    action="https://formspree.io/f/xeqneqng"
+    method="POST"
+    class = "formular"
+  >
+    <label>
+      Your email:
+      <input type="email" name="_replyto">
+    </label>
+    <label>
+      Your message:
+      <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+  </form>
+  <h2>Program:</h2>
+  <ul>
+    <li>Lu - Sâ: 07:30 - 22:00</li>
+    <li>Du: 08:00 - 20:00</li>
+  </ul>
+</div>
+<p class='map'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52975.15941266013!2d18.386614892144976!3d-33.91675169364696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6750cf9544a5%3A0x1dc3860578bb4780!2sV%26A%20Waterfront!5e0!3m2!1sro!2sro!4v1615664386032!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+<footer>
+  <div class='footer'>
+    <ul>
+      <li><h3>Contact</h3></li>
+      <li>0800 890 133*</li>
+      <li>companie@gmail.com</li>
+    </ul>
+  </div>
+  <div class='footer'>
+    <p>*Apel gratuit din toate rețelele. Apelurile din străinătate pot fi taxate.</p>
+
+    <p>**Toate prețurile incl. TVA</p>
+  </div>
+</footer>
+</body>
+</html>
