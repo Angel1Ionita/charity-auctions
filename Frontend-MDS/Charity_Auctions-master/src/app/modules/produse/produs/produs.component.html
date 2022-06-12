@@ -26,29 +26,20 @@
     <div class = "caseta_pret">
       <div id="1"><p> Pret: {{produs.pret}} lei</p> </div>
     </div>
-    <div class="selecteaza_marime">Selecteaza marimea:
-      <select id="marime">
-        <option>...</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-        <option>XL</option>
-      </select>
-      <div id = "div_cantitate" [formGroup]="CosProdusForm" > Cantitate:
-        <input matInput placeholder="cantitate" formControlName="cantitate">  </div>
+
       <mat-icon id = 'add_to_cart' (click) = "postcosprodus()">add_shopping_cart</mat-icon>
 
-    </div>
+    
 
 
   </div>
 </div>
 
 <div id = "tabel_recenzii" [formGroup]="Comentariu">
-  <h2>Scrie o recenzie: </h2>
-  <input matInput id = "recenzie" placeholder="com" formControlName="com"/>
+  <h2>Scrie un comentariu: </h2>
+  <input matInput id = "recenzie" placeholder="Enter comment" formControlName="com"/>
   <button (click)="post_comentariu()">Posteaza</button>
-  <div> <h2>Recenzii:</h2> </div>
+  <div> <h2>Comentarii:</h2> </div>
   <div id = 'lista_comentarii' *ngFor="let comentariu of comentarii">
     <div class = 'comentariu'>
       <p class = 'com_username'>Postat de: {{comentariu['username'] | uppercase}}</p>

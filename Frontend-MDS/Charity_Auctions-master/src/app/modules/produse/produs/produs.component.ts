@@ -93,19 +93,14 @@ export class ProdusComponent implements OnInit {
       produsId : this.id,
       cantitate : this.cantitate.value
     }
-    if( chestie.cantitate != 0 ) {
-      this.adminService.postCosProdus(chestie).subscribe(
-        (result) => {
-          console.log(result);
-        },
-        (error) => {
-          console.error(error);
-        }
-      )
-    }
-    else{
-      alert('Va rugam introduceti cantitatea!');
-    }
+    this.adminService.postCosProdus(chestie).subscribe(
+      (result) => {
+        console.log(result);
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
   }
   public openCos(): void{
     this.dialog.open(ViewCosComponent);
