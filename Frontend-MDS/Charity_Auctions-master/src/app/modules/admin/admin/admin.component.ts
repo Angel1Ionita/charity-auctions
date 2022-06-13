@@ -90,8 +90,8 @@ export class AdminComponent implements OnInit, OnDestroy {
     localStorage.setItem('produs_denumire', produs['denumire']);
     localStorage.setItem('pret', produs['pret']);
     localStorage.setItem('url_poza', produs['url_poza']);
-    localStorage.setItem('poster', produs['poster']);
-    localStorage.setItem('charity', produs['charity']);
+    localStorage.setItem('poster_name', produs['poster_name']);
+    localStorage.setItem('charity_name', produs['charity_name']);
     this.openModal1(produs);
   }
   public openCos(): void{

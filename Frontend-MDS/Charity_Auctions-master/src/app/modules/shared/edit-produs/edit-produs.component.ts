@@ -31,11 +31,11 @@ export class EditProdusComponent implements OnInit {
   get url_poza(): AbstractControl{
     return <AbstractControl>this.produsForm.get('url_poza');
   }
-  get poster(): AbstractControl{
-    return <AbstractControl>this.produsForm.get('poster');
+  get poster_name(): AbstractControl{
+    return <AbstractControl>this.produsForm.get('poster_name');
   }
-  get charity(): AbstractControl{
-    return <AbstractControl>this.produsForm.get('charity');
+  get charity_name(): AbstractControl{
+    return <AbstractControl>this.produsForm.get('charity_name');
   }
 
 
