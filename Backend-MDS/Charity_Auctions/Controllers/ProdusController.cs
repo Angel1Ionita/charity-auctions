@@ -79,6 +79,9 @@ namespace Charity_Auctions.Controllers
             newprodus.Denumire = dto.Denumire;
             newprodus.Pret = dto.Pret;
             newprodus.Url_poza = dto.Url_poza;
+            newprodus.Poster_name = dto.Poster_name;
+            newprodus.Charity_name = dto.Charity_name;
+
             newprodus.Tabel_Marimi = new Tabel_Marimi();
 
             _repository.Create(newprodus);

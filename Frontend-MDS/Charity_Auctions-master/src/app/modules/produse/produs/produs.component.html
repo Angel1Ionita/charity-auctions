@@ -2,7 +2,7 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>Bluză 'Befelize'</title>
+  <title>Auction</title>
 </head>
 <body>
 <div class = "bara_sus" >
@@ -27,9 +27,13 @@
       <div id="1"><p> Pret: {{produs.pret}} lei</p> </div>
     </div>
 
-      <mat-icon id = 'add_to_cart' (click) = "postcosprodus()">add_shopping_cart</mat-icon>
+    <div class = "date">
+      <div id="2"><p> Charity: {{produs.charity}}</p></div><br>
+      <div id="3"><p> Poster: {{produs.poster}}</p></div>
+    </div>
+      <mat-icon id = 'add_to_cart' (click) = "postcosprodus()">attach_money</mat-icon>
 
-    
+
 
 
   </div>

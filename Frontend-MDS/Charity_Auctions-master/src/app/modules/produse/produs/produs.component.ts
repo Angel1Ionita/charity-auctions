@@ -19,7 +19,7 @@ export class ProdusComponent implements OnInit {
   public produs: any;
   public comentarii = [];
   public CosProdusForm: FormGroup = new FormGroup( {
-    cantitate: new FormControl(0)
+    cantitate: new FormControl(1)
   });
 
   public upcom: FormGroup = new FormGroup({
@@ -96,6 +96,8 @@ export class ProdusComponent implements OnInit {
     this.adminService.postCosProdus(chestie).subscribe(
       (result) => {
         console.log(result);
+        alert('Bid successful');
+
       },
       (error) => {
         console.error(error);

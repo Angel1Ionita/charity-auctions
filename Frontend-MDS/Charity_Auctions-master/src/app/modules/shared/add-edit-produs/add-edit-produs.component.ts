@@ -14,7 +14,9 @@ export class AddEditProdusComponent implements OnInit {
     id: new FormControl(0),
     denumire: new FormControl(''),
     pret: new FormControl(0),
-    url_poza: new FormControl('')
+    url_poza: new FormControl(''),
+    poster: new FormControl(''),
+    charity: new FormControl('')
   });
 
   constructor(
@@ -28,10 +30,15 @@ export class AddEditProdusComponent implements OnInit {
   get pret(): AbstractControl{
     return <AbstractControl>this.produsForm.get('pret');
   }
-  get url_poza(): AbstractControl{
+  get url_poza(): AbstractControl {
     return <AbstractControl>this.produsForm.get('url_poza');
   }
-
+  get poster(): AbstractControl{
+    return <AbstractControl>this.produsForm.get('poster');
+  }
+  get charity(): AbstractControl{
+    return <AbstractControl>this.produsForm.get('charity');
+  }
 
   ngOnInit(): void {
   }

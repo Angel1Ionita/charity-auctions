@@ -11,6 +11,8 @@ namespace Charity_Auctions.Entities
         public float Pret { get; set; }
         public string Denumire { get; set; }
         public string Url_poza { get; set; }
+        public string Poster_name { get; set; }
+        public string Charity_name { get; set; }
 
         //Navigations properties
         public ICollection<Produs_Comanda> Produs_Comandas { get; set; }

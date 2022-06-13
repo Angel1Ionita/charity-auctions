@@ -31,6 +31,13 @@ export class EditProdusComponent implements OnInit {
   get url_poza(): AbstractControl{
     return <AbstractControl>this.produsForm.get('url_poza');
   }
+  get poster(): AbstractControl{
+    return <AbstractControl>this.produsForm.get('poster');
+  }
+  get charity(): AbstractControl{
+    return <AbstractControl>this.produsForm.get('charity');
+  }
+
 
   ngOnInit(): void {
 

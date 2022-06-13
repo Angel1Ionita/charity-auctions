@@ -29,11 +29,13 @@
 </div>
 <div id = 'lista_produse' *ngFor="let produs of produse">
   <div class = 'produs'>
-    <p class = 'id'>{{produs['id']}}</p>
+    <p></p>
     <p class = 'denumire'>{{produs['denumire']}}</p>
-    <p class = 'pret'>{{produs['pret']}}</p>
+    <p class = 'pret'>Pret: {{produs['pret']}}</p>
+    <p class = 'pret'>Poster: {{produs['poster']}}</p>
+    <p class = 'pret'>Charity: {{produs['charity']}}</p>
     <img src = "{{produs['url_poza']}}" class = 'produs_img'>
-    <mat-icon (click)="goToProdusProfile(produs['id'])">open_with</mat-icon>
+    <mat-icon class = "profile" (click)="goToProdusProfile(produs['id'])">open_with</mat-icon>
   </div>
 </div>
 <footer>

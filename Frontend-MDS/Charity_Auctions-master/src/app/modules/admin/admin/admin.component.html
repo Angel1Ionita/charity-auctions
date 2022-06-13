@@ -11,7 +11,7 @@
   </a>
   <nav class = "meniu" >
     <ul class = "meniu_buton"><a href="http://localhost:4200/produse">Auctions</a></ul>
-    <ul class = "meniu_buton"><a href="Contact.html">Contact</a></ul>
+    <ul class = "meniu_buton"><a href="http://localhost:4200/contact">Contact</a></ul>
     <mat-icon id = 'cos' (click) = "cos()">account_circle</mat-icon>
   </nav>
   <aside>
@@ -20,7 +20,6 @@
   </aside>
 </div>
 <div id = "filtre" >
-  <h1>Filtre disponibile</h1>
   <button (click)="addNewProdus()" mat-raised-button class = "add-button">
     Add auction
   </button>
@@ -30,6 +29,8 @@
     <p class = 'id'>{{produs['id']}}</p>
     <p class = 'denumire'>{{produs['denumire']}}</p>
     <p class = 'pret'>Pret: {{produs['pret']}}</p>
+    <p class = 'pret'>Poster: {{produs['poster']}}</p>
+    <p class = 'pret'>Charity: {{produs['charity']}}</p>
     <img src = "{{produs['url_poza']}}" class = 'produs_img'>
     <mat-icon class = "edit" (click)="editProdus(produs)">edit</mat-icon>
     <mat-icon class = "delete" (click)="deleteProdus(produs['id'])">delete</mat-icon>

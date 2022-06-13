@@ -10,6 +10,8 @@ namespace Charity_Auctions.Entities.DTOs
         public string Denumire { get; set; }
         public float Pret { get; set; }
         public string Url_poza { get; set; }
+        public string Poster_name { get; set; }
+        public string Charity_name { get; set; }
         public Tabel_Marimi Tabel_Marimi { get; set; }
     }
 }
