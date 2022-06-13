@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Charity_Auctions.Migrations
 {
-    public partial class Created : Migration
+    public partial class CreatedDB : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -79,6 +79,8 @@ namespace Charity_Auctions.Migrations
                     Pret = table.Column<float>(type: "real", nullable: false),
                     Denumire = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Url_poza = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Poster_name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Charity_name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Tabel_MarimiId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

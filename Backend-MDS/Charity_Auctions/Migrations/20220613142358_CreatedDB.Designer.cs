@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Charity_Auctions.Migrations
 {
     [DbContext(typeof(Proiect_context))]
-    [Migration("20220611092756_Created")]
-    partial class Created
+    [Migration("20220613142358_CreatedDB")]
+    partial class CreatedDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -139,7 +139,13 @@ namespace Charity_Auctions.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Charity_name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Denumire")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Poster_name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<float>("Pret")
