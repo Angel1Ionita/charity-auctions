@@ -12,6 +12,7 @@ export class AdminService {
   public url2 = 'https://localhost:5001/api/User'
   public url3 = 'https://localhost:5001/api/CosProdus'
   public url4 = 'https://localhost:5001/api/Comentariu'
+  public url5 = 'https://localhost:5001/api/CosProdus/User'
   constructor(
     public http: HttpClient,
   ) { }
@@ -72,5 +73,9 @@ export class AdminService {
   }
   public updateComentariu(comentariu: any): Observable<any>{
     return this.http.put(`${this.url4}`, comentariu);
+  }
+
+  public deleteProdusbyProdusId(produsid: any): Observable<any>{
+    return this.http.delete(`${this.url5}/${produsid}`, produsid);
   }
 }

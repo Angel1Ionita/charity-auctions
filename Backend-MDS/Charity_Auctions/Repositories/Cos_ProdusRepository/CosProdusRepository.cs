@@ -17,5 +17,10 @@ namespace Charity_Auctions.Repositories.Cos_ProdusRepository
         {
             return await _context.Cosproduse.Where(a => a.ProdusId == id).ToListAsync();
         }
+
+        public async Task<List<Cosprodus>> GetAllCosProdusByUserId(int id)
+        {
+            return await _context.Cosproduse.Where(a => a.UserId == id).ToListAsync();
+        }
     }
 }

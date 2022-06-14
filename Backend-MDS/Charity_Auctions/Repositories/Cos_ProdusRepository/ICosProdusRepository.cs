@@ -10,5 +10,7 @@ namespace Charity_Auctions.Repositories.Cos_ProdusRepository
     public interface ICosProdusRepository : IGenericRepository<Cosprodus>
     {
         Task<List<Cosprodus>> GetAllCosProdusByProdusId(int id);
+        Task<List<Cosprodus>> GetAllCosProdusByUserId(int id);
     }
+
 }

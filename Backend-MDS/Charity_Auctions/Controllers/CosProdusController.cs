@@ -66,6 +66,27 @@ namespace Charity_Auctions.Controllers
             return NoContent();
         }
 
+
+        [HttpDelete("/User/{produsid}")]
+
+        public async Task<IActionResult> DeleteCosProdus1(int id)
+        {
+            var comanda = await _repository.GetAllCosProdusByProdusId(id);
+
+            if (comanda == null)
+            {
+                return NotFound("Comanda nu exista!");
+            }
+
+            foreach (var produs in comanda)
+            {
+                _repository.Delete(produs);
+            }
+            
+            await _repository.SaveAsync();
+            return NoContent();
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateCosProdus(CreateCosProdusDTO dto)
         {

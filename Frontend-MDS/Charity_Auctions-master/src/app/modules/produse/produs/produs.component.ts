@@ -95,12 +95,23 @@ export class ProdusComponent implements OnInit {
     return <AbstractControl>this.upcom.get('updcom');
   }
 
+
   public postcosprodus(): void{
     let chestie = {
       userId : this.userId,
       produsId : this.id,
       cantitate : this.cantitate.value
     }
+
+    this.adminService.deleteProdusbyProdusId(chestie['produsId']).subscribe(
+      (result) => {
+        console.log(result);
+        window.location.reload();
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
 
     this.adminService.postCosProdus(chestie).subscribe(
       (result) => {
