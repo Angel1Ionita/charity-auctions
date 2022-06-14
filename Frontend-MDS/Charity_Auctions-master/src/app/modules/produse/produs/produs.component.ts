@@ -22,6 +22,13 @@ export class ProdusComponent implements OnInit {
     cantitate: new FormControl(1)
   });
 
+  public produsForm: FormGroup = new FormGroup({
+    id: new FormControl(localStorage.getItem('produs_id')),
+    denumire: new FormControl(localStorage.getItem('produs_denumire')),
+    pret: new FormControl(localStorage.getItem('pret')),
+    url_poza: new FormControl(localStorage.getItem('url_poza'))
+  });
+
   public upcom: FormGroup = new FormGroup({
     updcom: new FormControl("")
   })
@@ -69,6 +76,7 @@ export class ProdusComponent implements OnInit {
 
   }
 
+
   public getProdus(): void{
     this.produseService.getProdusById(this.id).subscribe(
       (result) => {
@@ -93,6 +101,7 @@ export class ProdusComponent implements OnInit {
       produsId : this.id,
       cantitate : this.cantitate.value
     }
+
     this.adminService.postCosProdus(chestie).subscribe(
       (result) => {
         console.log(result);
@@ -103,7 +112,20 @@ export class ProdusComponent implements OnInit {
         console.error(error);
       }
     )
+    this.produs.pret = this.produs.pret * 1.1;
+    localStorage.setItem('pret', this.produs['pret']);
+    this.adminService.editProdus(this.produsForm.value).subscribe(
+      (result) => {
+        console.log(result);
+        window.location.reload();
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
+
   }
+
   public openCos(): void{
     this.dialog.open(ViewCosComponent);
   }
