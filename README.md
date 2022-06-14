@@ -18,3 +18,4 @@ Colaboratori:
 
 [Demo](https://www.youtube.com/watch?v=HjZrlBcov-4)
 
+[Backlog/User stories](https://trello.com/b/QcorPdDt/mds-auctions)
