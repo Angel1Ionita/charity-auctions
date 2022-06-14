@@ -12,10 +12,10 @@ Colaboratori:
 - Ionita Angel 231
 - Gherghe Sebastian 231
 
-
+[Backlog/User stories](https://trello.com/b/QcorPdDt/mds-auctions)
 
 [Diagrame UML](https://github.com/Angel1Ionita/charity-auctions/blob/master/Diagrame%20UML.pdf)
 
 [Demo](https://www.youtube.com/watch?v=HjZrlBcov-4)
 
-[Backlog/User stories](https://trello.com/b/QcorPdDt/mds-auctions)
+
