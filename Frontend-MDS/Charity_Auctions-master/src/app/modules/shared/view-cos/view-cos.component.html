@@ -1,0 +1,16 @@
+<h1>Profil: </h1>
+<div *ngFor="let column of cos"  >
+    <div *ngFor="let produs of produse" id = 'cos_container'>
+      <div *ngIf="produs['id']==column['produsId']" id= 'cos_lista'>
+          <p>{{column['produsId']}}</p>
+          <p>Denumire: {{produs['denumire']}}</p>
+          <img src ="{{produs['url_poza']}}" alt="produs">
+          <p>Pret: {{produs['pret']}}</p>
+          <mat-icon (click)="sterge_produs(column['id'])">delete</mat-icon>
+      </div>
+    </div>
+</div>
+<div>
+  <p>Total: {{total}} RON</p>
+</div>
+

@@ -1,0 +1,319 @@
+.bara_sus{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.bara_sus img{
+  height: 50px;
+  background-color: white;
+}
+.meniu{
+  display: flex;
+  height: 50px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: black;
+  opacity: 0.7;
+}
+.meniu ul a{
+  display: block;
+  text-decoration: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color:white;
+  white-space: nowrap;
+  justify-content: space-around;
+}
+.meniu_buton a:hover{
+  color:royalblue;
+}
+.meniu_lateral{
+  position:fixed;
+  white-space: nowrap;
+  overflow: hidden;
+  left: 0;
+  bottom: 0;
+  display: block;
+  padding: 0 5px;
+  width: 50px;
+  height: calc(100vh - 50px);
+  background-color: black;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+.meniu_lateral ul{
+  flex-direction: column;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.meniu_lateral ul button{
+  margin-left: 100px;
+  visibility: hidden;
+  color: black
+}
+footer{
+  background-color: silver;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1%;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.bine_ati_venit{
+  margin-top: 75px;
+  margin-left: 37%;
+  max-height: 200px;
+  justify-content: center;
+}
+.descriere_home h2{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.descriere_home p{
+  display: flex;
+  text-align: center;
+  margin-left: 75px;
+}
+.map{
+  display: flex;
+  justify-content:space-evenly;
+}
+.contact{
+  margin-top: 75px;
+  width: 100%;
+}
+.contact p{
+  text-align: center;
+}
+.contact h2{
+  text-align: center;
+}
+.contact ul li{
+  text-align: center;
+  list-style: none;
+}
+.despre_noi{
+  display: flex;
+  margin-top: 100px;
+  margin-left: 50px;
+  text-align: center;
+}
+#filtre{
+  margin-top: 100px;
+  margin-left: 15%;
+}
+#lista_filtre{
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+#lista_filtre div{
+  margin-left: 6px;
+}
+#lista_filtre input{
+  width: 70px;
+  margin-left: 6px;
+}
+.lista_produse{
+  margin-top: 90px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.produs a{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 225px;
+  height: 350px;
+  background-color:rgb(148, 148, 148);
+  color:black;
+  cursor: pointer;
+  text-decoration: none;
+}
+.produs img{
+  max-width: 90%;
+  margin-left: 5%;
+  max-height: 80%;
+  margin-top: 2%;
+  justify-content: center;
+}
+.produs div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+#lista_produse :hover{
+  color: white;
+
+}
+.detalii_produs{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-left: 15%;
+  margin-right: 10%;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.detalii_produs img{
+  max-width: 400px;
+  max-height: 600px;
+}
+#produs_unic{
+  margin-right: 150px;
+}
+.caseta_pret{
+  color: #777777;
+  width: 250px;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.date{
+  color: black;
+  width: 300px;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.selecteaza_marime{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#div_cantitate{
+  height: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+#div_cantitate input{
+  width: 20px;
+}
+.marime{
+  height: 20px;
+}
+.selecteaza_marime button{
+  font-size:15px;
+}
+.autentificare{
+  margin-left: 150px;
+  margin-top: 100px;
+}
+.date_autentificare{
+  margin-top: 50px;
+  margin-left: 110px;
+  display: flex;
+  flex-direction: row;
+}
+.text_autentificare{
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.inputuri_autentificare{
+  display: flex;
+  flex-direction: column;
+}
+.buton_autentificare{
+  margin-left: 250px;
+  margin-top: 10px;
+  height: 30px;
+  width: 150px;
+}
+#tabel_recenzii{
+  margin-left: 200px;
+}
+#tabel_recenzii input{
+  width: 50%;
+  height: 100px;
+  flex-wrap: wrap;
+}
+#schimba_poza{
+  margin-left: 300px;
+  height: 20px;
+  font-size: 20px;
+  height: 30px;
+}
+#cos_cumparaturi{
+  border-radius: 20px;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#titlu_cos{
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#add_to_cart{
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#cos{
+  color: white;
+  margin-top: 12px;
+  margin-left: 30px;
+}
+#lista_comentarii{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .comentariu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-style: groove;
+    width: 80%;
+
+    .com_username{
+      margin-left: 30px;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .com{
+      margin-left: 30px;
+      margin-top: 30px;
+      justify-content: center;
+      margin-left: 10px;
+    }
+    .continut{
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    button{
+      margin-left: 30px;
+      margin-top: 30px;
+      width: 75px;
+    }
+  }
+  .tabel_up{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

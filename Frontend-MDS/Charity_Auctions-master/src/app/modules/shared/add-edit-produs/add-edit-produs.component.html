@@ -1,0 +1,36 @@
+<div class = "container" >
+  <h1 class = "title" >
+    Adauga licitatie
+  </h1>
+  <form [formGroup]="produsForm" class = "form">
+
+    <mat-form-field appearance="outline">
+      <mat-label>Denumire</mat-label>
+      <input matInput placeholder="Denumire" formControlName="denumire"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Pret</mat-label>
+      <input matInput placeholder="Pret" formControlName="pret"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Url Poza</mat-label>
+      <input matInput placeholder="Url_poza" formControlName="url_poza"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Your displayed name</mat-label>
+      <input matInput placeholder="Poster" formControlName="poster_name"/>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Charity</mat-label>
+      <input matInput placeholder="Charity" formControlName="charity_name"/>
+    </mat-form-field>
+
+    <button mat-raised-button (click)="addProdus()">
+      Save
+    </button>
+  </form>
+</div>

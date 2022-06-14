@@ -1,0 +1,18 @@
+#cos_container{
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#cos_lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  p{
+    margin-left: 10px;
+  }
+}
+img{
+  width: 100px;
+}
