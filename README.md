@@ -10,7 +10,7 @@ Colaboratori:
 - Linte Robert 231
 - Moraru Mihai 231
 - Ionita Angel 231
-- Gherghe Sebastian 231
+- Gherghe Sebastian Adrian 231
 
 [Backlog/User stories](https://trello.com/b/QcorPdDt/mds-auctions)
 
